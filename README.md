@@ -10,16 +10,16 @@ Build Smart contracts ProfitSplitter using Solidity to perfrom several things:
 - Distribute company shares for employees in a "deferred equity incentive plan" automatically.
 
 ### Files
-- AssociateProfitSplitter.sol -- Level 1 starter code.
-- TieredProfitSplitter.sol -- Level 2 starter code.
-- DeferredEquityPlan.sol -- Level 3 starter code.
+- [AssociateProfitSplitter.sol](https://github.com/docfern/contract/blob/main/screenshot/DEPLOYED_AssociateProfitSplitter.jpg) -- Level 1 starter code.
+- [TieredProfitSplitter.sol](https://github.com/docfern/contract/blob/main/screenshot/DEPLOYED_TieredProfitSplitter.jpg) -- Level 2 starter code.
+- [DeferredEquityPlan.sol](https://github.com/docfern/contract/blob/main/screenshot/DEPLOYED_DeferredEquityPlan.jpg) -- Level 3 starter code.
 
 ### Initial Instructions
 3 different smart contracts distributing to be created:
-- Level One is an AssociateProfitSplitter contract. This will accept Ether into the contract and divide the Ether evenly among the associate level employees. This will allow the Human Resources department to pay employees quickly and efficiently.
-- Level Two is a TieredProfitSplitter that will distribute different percentages of incoming Ether to employees at different tiers/levels. For example, the CEO gets paid 60%, CTO 25%, and Bob gets 15%.
+- **Level One** is an AssociateProfitSplitter contract. This will accept Ether into the contract and divide the Ether evenly among the associate level employees. This will allow the Human Resources department to pay employees quickly and efficiently.
+- **Level Two** is a TieredProfitSplitter that will distribute different percentages of incoming Ether to employees at different tiers/levels. For example, the CEO gets paid 60%, CTO 25%, and Bob gets 15%.
 
-- Level Three is a DeferredEquityPlan that models traditional company stock plans. This contract will automatically manage 1000 shares with an annual distribution of 250 over 4 years for a single employee.
+- **Level Three** is a DeferredEquityPlan that models traditional company stock plans. This contract will automatically manage 1000 shares with an annual distribution of 250 over 4 years for a single employee.
 
 ### Starting project
 Navigate to the Remix IDE and create a new contract called using the starter code for respected level as above.<br>
@@ -32,7 +32,7 @@ As Solidity is Object Oriented Programming Language, all contracts must be compi
 Note: Make sure to use the correct compiling version in Remix (^0.5.0 or above) and always use prefunded address from Metamask. Contracts deployment has to be done with 0 wei and Injected Web3 which will connect to 'Metamask' address.<br>
 
 #### Test the Contracts
-In the Deploy tab in Remix, deploy the contracts to your local Ganache chain by connecting to Injected Web3 and ensuring Metamask is pointed to localhost:8545<br>
+In the Deploy tab in [Remix](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.7.4+commit.3f05b770.js), deploy the contracts to your local [Ganache chain](https://www.trufflesuite.com/ganache) by connecting to Injected Web3 and ensuring Metamask is pointed to localhost:8545<br>
 ![CONTRACT](https://github.com/docfern/contract/blob/main/screenshot/DEPLOYED_AssociateProfitSplitter.jpg)
 
 Fill in the contructor parameters with designated employee addresses<br>
