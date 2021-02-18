@@ -91,17 +91,12 @@ Then, transfer the amount to employee_one. Repeat the steps for each employee, s
 
 For example, each transfer should look something like the following for each employee, until after transferring to the third employee:
 
-Step 1: amount = points * 60;
-
-For employee_one, distribute points * 60.
-
-For employee_two, distribute points * 25.
-
-For employee_three, distribute points * 15.
-
-Step 2: total += amount;
-
-Step 3: employee_one.transfer(amount);
+- Step 1: amount = points * 60;
+	- For employee_one, distribute points * 60.
+	- For employee_two, distribute points * 25.
+	- For employee_three, distribute points * 15.
+- Step 2: total += amount;
+- Step 3: employee_one.transfer(amount);
 
 Send the remainder to the employee with the highest percentage by subtracting total from msg.value, and sending that to an employee.
 
@@ -142,20 +137,17 @@ In this contract, manage an employee's "deferred equity incentive plan" in which
 - Deploy and test your contract locally.
     - For this contract, test the timelock functionality by adding a new variable called uint fakenow = now; as the first line of the contract, then replace every other instance of now with fakenow. Utilize the following fastforward function to manipulate fakenow during testing.
     - Add this function to "fast forward" time by 100 days when the contract is deployed (requires setting up fakenow):
-    ~ function fastforward() public {
+    ''' function fastforward() public {
     fakenow += 100 days;
     }
+    '''
 - Once satisfied with the contract's logic, revert the fakenow testing logic.
 
-#### Transactions History
 #### 'Etherscan' Blockchain Transaction Ledger
 ![CONTRACT](https://github.com/docfern/contract/blob/main/screenshot/DepositBalanceConstructor.jpg)
 
 #### Resources
-For some succinct and straightforward code snips, check out Solidity By Example<br>
-
-For a more extensive list of awesome Solidity resources, checkout Awesome Solidity<br>
-
-Another tutorial is available at EthereumDev.io<br>
-
-For building games, an excellent tutorial called CryptoZombies<br>
+- 1. For some succinct and straightforward code snips, check out [Solidity By Example](https://github.com/raineorshine/solidity-by-example)<br>
+- 2. For a more extensive list of awesome Solidity resources, checkout [Awesome Solidity](https://github.com/bkrem/awesome-solidity)<br>
+- 3. Another tutorial is available at [EthereumDev.io](https://ethereumdev.io/)<br>
+- 4. For building games, an excellent tutorial called [CryptoZombies](https://cryptozombies.io/)<br>
